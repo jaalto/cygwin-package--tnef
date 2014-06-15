@@ -1,0 +1,14 @@
+--- a/doc/tnef.1.in
++++ b/doc/tnef.1.in
+@@ -17,8 +17,9 @@
+ Encapsulation Format (hereafter, TNEF), which "wraps"
+ Microsoft e-mail attachments.
+ .PP
+-.IR Unfortunately "," these "wrapped" attachments are inaccessible to
+-any e-mail client that does not understand TNEF.
++.IR Unfortunately ","
++these "wrapped" attachments are inaccessible to any e-mail client that does not
++understand TNEF.
+ .IR Fortunately ","
+ the
+ .B tnef
