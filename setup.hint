@@ -1,0 +1,7 @@
+sdesc: "Unpacks MS-TNEF email attachments"
+ldesc: "TNEF provides a way to unpack those pesky Microsoft MS-TNEF MIME
+attachments. It operates like tar in order to upack any files which
+may have been put into the MS-TNEF attachment instead of being
+attached seperately."
+category: Archive Mail
+requires: cygwin
