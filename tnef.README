@@ -1,23 +1,40 @@
 tnef
 ------------------------------------------
-TNEF provides a way to unpack those pesky Microsoft MS-TNEF MIME
-attachments. It operates like tar in order to upack any files which
-may have been put into the MS-TNEF attachment instead of being
-attached seperately.
+
+Tool to unpack MIME application/ms-tnef attachments
+
+TNEF is a program for unpacking MIME attachments of type
+application/ms-tnef. This is typcially a Microsoft only attachment.
+The TNEF program allows one to unpack the attachments which were
+encapsulated into the TNEF attachment, thus alleviating the need to
+use Microsoft Outlook to view the attachment.
 
 Runtime requirements:
-  cygwin-1.5.18 or newer
+  cygwin
 
 Build requirements:
-  cygwin-1.5.18 or newer
-  gcc-3.4.4-1 or newer
-  binutils-20050610-1 or newer
+  cygwin
 
 Canonical homepage:
-  http://tnef.sourceforge.net/
+  https://freecode.com/projects/tnef
+  http://sourceforge.net/projects/tnef
+  https://packages.debian.org/unstable/tnef
 
 Canonical download:
-  http://sourceforge.net/projects/tnef
+  See above
+
+Version control repository:
+  git clone git://git.code.sf.net/p/tnef/git tnef.git
+
+Mailing list:
+
+Forum / Wiki:
+
+IRC channel:
+
+Upstream contact:
+  Maintainer: Mark Simpson <verdammelt@users.sf.net>. <damned@world.std.com>
+  Bugs: http://sourceforge.net/p/tnef/bugs
 
 License:
   GPL
@@ -25,39 +42,32 @@ License:
 Language:
   C
 
-------------------------------------
+------------------------------------------
 
 Build instructions:
-  unpack tnf-1.4.3-1-src.tar.bz2
-    if you use setup to install this src package, it will be
-	 unpacked under /usr/src automatically
+  unpack tnef-*-src.tar.bz2
+    if you use setup to install this source package, it will be
+    unpacked under /usr/src automatically
   cd /usr/src
-  ./tnf-1.4.3-1.sh all
+  ./tnef*.sh all
 
-This will create:
-  /usr/src/tnf-1.4.3-1.tar.bz2
-  /usr/src/tnf-1.4.3-1-src.tar.bz2
+------------------------------------------
 
-Or use './tnf-1.4.3-1.sh prep' to get a patched source directory
+Files included in the binary distribution:
+  See Cygwin package archive
 
-To find out the files included in the binary distribution, you can
-use "cygcheck -l tnef", or browse the listing for the appropriate version
-at <http://cygwin.com/packages/>.
-
-------------------------------------
+------------------------------------------
 
 Port Notes:
 
-----------  tnef-1.4.3-1 -- 08/10/2007 -----------
-New Maintainer (Jonathan C. Allen)
-tnef 1.4.3 Released
+----- version 1.4.9-1 -----
+- New upstream release 2014-06-15 Jari Aalto, new maintainer
 
-----------  tnef-1.3.4-1 -- 12/29/2005 -----------
-Initial release
+----- version 1.4.3-1 -----
+- 2007-08-10 New Maintainer (Jonathan C. Allen)
 
-For more information about this package, see the upstream documentation in
-/usr/share/doc/tnef-1.4.3.
+----- version 1.3.4-1 -----
+- 2005-12-29 Initial release
 
-Cygwin port maintained by: Jonathan C. Allen <jca at sdf dot lonestar dot org>
-Please address all questions to the Cygwin mailing list:
-<cygwin at cygwin dot com>
+Copyright (C) 2014 Jari Aalto <jari.aalto@cante.net>; Licensed under GPL v2 or later
+Copyright (C) 2007-2014 Jonathan C. Allen <jca at sdf lonestar org>; Licensed under GPL v2 or later
